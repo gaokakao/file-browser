@@ -1,4 +1,4 @@
-<?
+<?php
 
 
 
@@ -19,35 +19,31 @@ echo '
 <!DOCTYPE html>
 <html>
 <head>
-<title>Failai</title>
+<title>Failes</title>
 <meta charset="utf-8">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 <style>
 
-}input[type=button] 
-
-{
-    width: 8em;  height: 2em;
-}
 
 
-html,body 
+html,body
 {
   height:100%;
   width:100%;
   margin:0;
   font-size: medium;
 }
-body 
+body
 {
   display:flex;
 }
-form 
+form
 {
   margin:auto;
 }
 
-.container 
+.container
 {
     position: absolute;
     top: 50%;
@@ -60,17 +56,10 @@ span.nobr
 	white-space: nowrap; 
 }
 
-#login
-    {
-     font-size:18pt;
-     
-     width:350px;
-    }
-
 </style>
 
-</head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
 
 <html>
 
@@ -83,17 +72,17 @@ span.nobr
 
 <div class="login">
 
-	<form action="/start.php" method="post">
+	<form action="start.php" method="post">
 	
-<span align="left"> <img src="klinikos.jpg" style="width: 100; height:100px "> </span>
-	<h1 align="center">  Santa Failai </h1>
+<span align="left"> <img src="files.png" width = "100" height = "100" align="middle"> </span>
+	<h1 align="center">  File Browser </h1>
 
 
 
 <ul style="list-style-type: none;">
-  <li><input type="text" name="user" placeholder="Naudotojo vardas" id="login" autofocus></li> 
-  <li><input type="password" name="pass" placeholder="Slaptažodis" id="login" ></li>
-  <li><button type="submit" style ="width: 8em;  height: 2em;" >Pirmyn</button></li> 
+  <li><input type="text" name="user" placeholder="Username" id="login" autofocus required></li>
+  <li><input type="password" name="pass" placeholder="Password" id="login" required></li>
+  <li><button type="submit" class="btn btn-primary">Login</button></li> 
 </ul>
 
 	</form>
